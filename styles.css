@@ -1,4 +1,17 @@
-*{
+* {
     box-sizing: border-box;
-    background-color: pink;
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-container a{
+    padding: 0 10px;
 }

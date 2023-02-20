@@ -11,6 +11,7 @@ body {
 }
 
 .navbar-container{
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -54,7 +55,15 @@ body {
 
 .body-half{
     display: flex;
+    padding: 80px 0;
 }
 .body-half > div{
     flex: 1 1 0;
+    width: 0;
+    overflow: hidden;
+}
+.body-half img{
+    width: 100%;
+    max-height: 500px;
+    object-fit:cover;
 }

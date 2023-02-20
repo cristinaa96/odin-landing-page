@@ -4,10 +4,14 @@
 
 body {
     max-width: 1920px;
-    margin: 0 10vw;
     font-family: Helvetica, Arial, sans-serif;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
     
+}
+
+.body-container{
+    padding: 0 10vw;
 }
 
 .navbar-container{
@@ -30,11 +34,11 @@ body {
     background-color: #1F2937;
     width: 100%;
     /* Testing if absolute position helps make the bg color spread whole width */
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     top: 0;
     left: 0;
-    padding: 0 10vw;
+    
 }
 .dark-container p, .dark-container a{
     color: #E5E7EB;
@@ -50,7 +54,26 @@ body {
     font-weight: 700;
 }
 .light-container{
-    color: #E5E7EB;
+    background-color: #E5E7EB;
+}
+.white-container{
+    color: #1F2937;
+}
+.white-container h2{
+    font-weight: 900;
+    text-align:center;
+    margin: 50px 0;
+    font-size: 36px;
+}
+
+.white-container img{
+    text-align:center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.white-container p{
+    text-align: center;
+    opacity: .7;
 }
 
 .body-half{
@@ -58,12 +81,35 @@ body {
     padding: 80px 0;
 }
 .body-half > div{
-    flex: 1 1 0;
-    width: 0;
+    flex: 1 1 auto;
     overflow: hidden;
 }
 .body-half img{
     width: 100%;
     max-height: 500px;
     object-fit:cover;
+}
+.body-half-1{
+    width: 40%;
+    padding-right: 60px;
+}
+.body-half-2{
+    width: 60%;
+    padding-left: 60px;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+}
+.info-container > div{
+    flex: 1;
+}
+.info-item{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items:center;
+    padding: 0 80px;
 }
